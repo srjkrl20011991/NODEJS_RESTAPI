@@ -8,7 +8,8 @@ require('dotenv').config()
 const postsRoute = require("./routes/posts")
 
 
-//MiddleWare
+//MiddleWares
+app.use(cors())
 app.use(bodyParser.json());
 
 // ROUTES
